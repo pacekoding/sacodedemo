@@ -31,7 +31,7 @@ const App = () => {
   async function getDetailFromApi() {
     try {
       const response = await fetch(
-        'http://localhost:3000/members'
+        'http://localhost:3000/api/members'
       );
       const json = await response.json();
       setMembers(json.data.members)
